@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Users table</title>
+</head>
+<body>
+    <div>
+        <table id="table" class="table is-bordered is-fullwidth">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                        <input type="text" id="name" class="input is-small is-rounded" onkeyup="searchName()">
+                    </th>
+                    <th>
+                        Location
+                        <input type="text" id="location" class="input is-small is-rounded" onkeyup="searchLocation()">
+                    </th>
+                    <th>
+                        DOB
+                        <input type="text" id="registered" class="input is-small is-rounded"
+                            onkeyup="searchRegistered()">
+                    </th>
+                    <th>Picture</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="JSONTable.js"></script>
+</body>
+</html>
